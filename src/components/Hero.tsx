@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 animate-fade-in">
           Luxury Reimagined
           <br />
-          <span className="text-luxury-gold">for the Next Generation</span>
+          <span className="text-luxury-burgundy">for the Next Generation</span>
         </h1>
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in">
           Where Gen Z reconnects with luxury through authenticity, storytelling, and belonging.
