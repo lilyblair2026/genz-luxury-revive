@@ -56,6 +56,9 @@ export default {
           silver: "hsl(var(--luxury-silver))",
           blue: "hsl(var(--luxury-blue))",
           burgundy: "hsl(var(--luxury-burgundy))",
+          sand: "hsl(var(--luxury-sand))",
+          champagne: "hsl(var(--luxury-champagne))",
+          navy: "hsl(var(--luxury-navy))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
