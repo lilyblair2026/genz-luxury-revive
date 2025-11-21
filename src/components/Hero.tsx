@@ -23,15 +23,12 @@ const Hero = () => {
           <span className="text-luxury-burgundy">for the Next Generation</span>
         </h1>
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in">
-          Where Gen Z reconnects with luxury through authenticity, storytelling, and belonging.
+          Belonging is the new luxury
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
           <Button size="lg" className="text-lg">
             Explore the Community
             <ArrowRight className="ml-2" size={20} />
-          </Button>
-          <Button size="lg" variant="outline" className="text-lg">
-            Learn More
           </Button>
         </div>
       </div>

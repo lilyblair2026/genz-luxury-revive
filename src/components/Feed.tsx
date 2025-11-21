@@ -1,6 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+// Image paths from public folder
+const article1 = "/article_1.jpg";
+const article3 = "/article3.jpg";
+const tiffanyArticle = "/tiffany_article.jpg";
+
 const Feed = () => {
   const articles = [
     {
@@ -8,18 +13,21 @@ const Feed = () => {
       title: "The Rise of Quiet Luxury Among Gen Z",
       excerpt: "How minimalism and understated elegance are reshaping the luxury landscape.",
       readTime: "5 min read",
+      images: [article1],
     },
     {
       category: "Brand Spotlight",
       title: "Tiffany & Co.'s Journey to Sustainability",
       excerpt: "Exploring the heritage brand's commitment to ethical sourcing and transparency.",
       readTime: "7 min read",
+      images: [tiffanyArticle],
     },
     {
       category: "Gen Z Voices",
       title: "What We Really Want from Luxury",
       excerpt: "Real interviews with young consumers about authenticity, value, and belonging.",
       readTime: "6 min read",
+      images: [article3],
     },
   ];
 
@@ -41,7 +49,25 @@ const Feed = () => {
               key={index}
               className="overflow-hidden hover:shadow-luxury transition-smooth group cursor-pointer bg-card"
             >
-              <div className="h-48 bg-gradient-luxury" />
+              <div className="h-48 overflow-hidden relative bg-gradient-luxury">
+                {article.images && article.images.length > 0 ? (
+                  <div className={`h-full w-full ${article.images.length > 1 ? 'grid grid-cols-3' : ''}`}>
+                    {article.images.map((image, imgIndex) => (
+                      <div key={imgIndex} className="h-full w-full relative">
+                        <img
+                          src={image}
+                          alt={`${article.title} - Image ${imgIndex + 1}`}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
               <div className="p-6">
                 <p className="text-sm font-medium text-primary mb-2">{article.category}</p>
                 <h3 className="text-xl font-serif font-semibold mb-3 group-hover:text-primary transition-smooth">

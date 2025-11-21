@@ -16,8 +16,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-3xl font-serif font-bold mb-4">LOVABLE</h3>
             <p className="text-primary-foreground/80 mb-6 max-w-sm">
-              Building community, not hierarchy. Where Gen Z reconnects with luxury through 
-              authenticity, storytelling, and belonging.
+              Building community, not hierarchy. Belonging is the new luxury
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-smooth">

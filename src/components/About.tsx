@@ -30,7 +30,7 @@ const About = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             Traditional luxury felt elitist, exploitative, and disconnected from values that matter—
             sustainability, creativity, fairness. Gen Z craves authenticity over exclusivity. 
-            They want to belong, not just buy. LOVABLE bridges that gap.
+            They want to belong, not just buy. Luxury reimagined bridges that gap.
           </p>
         </div>
 
@@ -47,12 +47,6 @@ const About = () => {
               <p className="text-muted-foreground">{value.description}</p>
             </Card>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <blockquote className="text-2xl md:text-3xl font-serif italic text-foreground/90 max-w-3xl mx-auto">
-            "Belonging is the new luxury."
-          </blockquote>
         </div>
       </div>
     </section>
